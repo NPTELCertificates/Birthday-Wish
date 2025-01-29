@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #4395e8;
+            flex-direction: column;
+        }
+        .birthday-container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .birthday-container h1 {
+            color: #4395e8;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #4395e8;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #1c4874;
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-container">
+        <h1>Happy Birthday! Aman 🎉🎂</h1>
+        <p>Click the button to receive a surprise!</p>
+        <button class="btn" onclick="showSurprise()">Click Me</button>
+        <p id="surpriseMessage" style="display: none; font-size: 18px; color: #4395e8; margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            let message = document.getElementById('surpriseMessage');
+            message.textContent = 'Wishing you a fantastic year ahead! 🎈🎊';
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
